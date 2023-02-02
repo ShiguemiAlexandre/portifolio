@@ -1,0 +1,15 @@
+header{
+    background-color: #FFA70A;
+    margin-left: 0;
+    margin-right: 0;
+}
+#sun{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+body{    
+    background: rgb(245,255,0);
+    background: linear-gradient(180deg, rgba(245,255,0,1) 0%, rgba(255,111,0,1) 65%);
+}

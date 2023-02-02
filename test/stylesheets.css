@@ -1,0 +1,15 @@
+div {
+    background-color: red;
+    width: 50px;
+    margin: 5px;
+}
+
+
+
+.container{
+    display: grid;
+    background-color: green;
+    grid-template-columns: repeat(3, 1fr);
+    width: 180px;
+    max-width: 180px;
+}
