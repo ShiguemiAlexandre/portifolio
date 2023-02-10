@@ -1,10 +1,74 @@
+
+body{
+    background-image: url(/img/background.jpg);
+}
+
+/*Scrolling*/
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(38 173 220);
+    max-height: 30%;
+}
+
+/*Pergaminho*/
 #pergaminho{
     width: 100%;
-    margin-top: 30vh;
     cursor: pointer;
-    /* transition: ease;
-    transition-duration: 3s; */
+    transition: all 3s;
+    margin: 30vh 0vw 0 0vw;
+    z-index: 1;
+    position: relative;
 }
-/* #pergaminho:hover {
-    margin-top: 0;
-} */
+
+/*Abertura de pergaminho*/
+.open{
+    transition: all 3s;
+    transform: translateY(-80%);
+}
+.container_papel{
+    display: block;
+}
+.container_main{
+    transition: all 10s;
+    animation: fade-in-top 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+main{
+    background-color: beige;
+    margin: 0px 4vw 0px 4vw;    
+    display: none;
+    transition: all 10s;
+    transform: translateY(20%);
+    z-index: 2;
+}
+
+@keyframes abertura{
+    /* 0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(100%);
+    } */
+    /* from { opacity: 0; }
+    to   { opacity: 1; } */   
+}
+@keyframes fade-in-top {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+      transform: translateY(-30vh);
+      opacity: 1;
+    }
+  }

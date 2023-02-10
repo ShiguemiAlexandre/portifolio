@@ -1,13 +1,7 @@
-#myImage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 1s ease-in-out;
-  }
-  
-  
-  #top:target #myImage {
-    top: 0;
-  }
-  
+#menu-lateral {
+  width: 250px;
+  height: 100px;
+  margin-left: -250px;
+  transition: margin-left .7s;
+  border: 1px solid black;
+}
