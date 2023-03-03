@@ -1,8 +1,8 @@
-
-body{
+ @import url('https://fonts.googleapis.com/css2?family=Courgette&family=IM+Fell+English&family=IM+Fell+English+SC&family=Kalam:wght@700&family=Lobster&family=Share+Tech&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Courgette&family=IM+Fell+English&family=IM+Fell+English+SC&family=Kalam:wght@700&family=Lobster&family=Share+Tech&display=swap');
+ body{
     background-image: url(/img/background.jpg);
 }
-
 /*Scrolling*/
 
 ::-webkit-scrollbar{
@@ -31,14 +31,13 @@ body{
 #click_pergaminho{
     display: grid;
     place-items: center;
-    color: white;
-    background-color: rgb(60, 60, 255);
-    max-width: 10vw;
+    color: rgb(0, 0, 0);
+    background-color: rgb(118, 118, 225);
+    width: 13vw;
     border-radius: 10px 10px 10px 10px;
     margin: 0 auto;
     font-size: 1vw;
-    margin-top: 0;
-    box-sizing: border-box;
+    font-family: 'IM Fell English', serif;
 }
 /*Abertura de pergaminho*/
 .open{
@@ -59,6 +58,7 @@ main{
     transition: all 10s;
     transform: translateY(20%);
     z-index: 2;
+    border-radius: 20px 20px 20px 20px;
 }
 @keyframes fade-in-top {
     0% {
@@ -72,29 +72,115 @@ main{
         opacity: 1;
     }
     100% {
-      transform: translateY(-31.5vh);
+      transform: translateY(-28.5vh);
       opacity: 1;
     }
   }
 
 
 /*Style img*/
+
 #tsuru{
-    max-width: 20%;
+    max-width: 30%;
 }
-#myphoto{
-    max-width: 20%;
+.tsuru_pai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #linkedinicon{
-    max-width: 2%;
+    max-width: 2vw;
 }
 #githubicon{
-    max-width: 2%;
+    max-width: 2vw;
 }
 #pmc{
     max-width: 50%;
     border-radius: 30px 30px 30px 30px;
 }
-#under{
+#construction{
     max-width: 20%;
 }
+
+/*First Screen*/
+
+/*topo | direita | inferior | esquerda*/
+
+a {
+    text-decoration: none;
+}
+.inicio{
+    font-family: 'IM Fell English', serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#ola{
+    font-size: 2vw;
+    margin: 10vh 0 0 10vw;
+}
+#nome{
+    font-size: 3vw;
+    margin: 5vh 0 0 11vw
+}
+#status{
+    font-size: 2vw;
+    margin: 5vh 0 0 10vw;
+}
+.botao_inicial{
+    margin: 2vh 0 20vh 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#botaogit{
+    background-color: black;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+#botaolink{
+    background-color: black;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+/*Sobre*/
+
+.sobre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "area1 area2";
+    font-family: 'IM Fell English', serif;
+}
+#myphoto{
+    place-items: center;
+    grid-area: area1;
+    max-width: 22vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+#myphoto:hover{
+    transition: all 0.5s;
+    box-shadow: 0 0 20px blue;
+}
+
+.photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobremim{
+    grid-area: area2;
+}
+#sobre_text{
+    width: 35vw;
+}
+#sobre_tittle{
+    font-size: 3vw;
+}
+
+/*Tecnology*/
+
