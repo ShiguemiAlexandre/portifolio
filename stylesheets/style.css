@@ -28,6 +28,18 @@ body{
     position: relative;
 }
 
+#click_pergaminho{
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: rgb(60, 60, 255);
+    max-width: 10vw;
+    border-radius: 10px 10px 10px 10px;
+    margin: 0 auto;
+    font-size: 1vw;
+    margin-top: 0;
+    box-sizing: border-box;
+}
 /*Abertura de pergaminho*/
 .open{
     transition: all 3s;
@@ -48,27 +60,38 @@ main{
     transform: translateY(20%);
     z-index: 2;
 }
-
-@keyframes abertura{
-    /* 0% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(100%);
-    } */
-    /* from { opacity: 0; }
-    to   { opacity: 1; } */   
-}
 @keyframes fade-in-top {
     0% {
-      transform: translateY(-1000px);
+      transform: translateY(-30%);
       opacity: 0;
     }
     50% {
         opacity: 0;
     }
+    75%{
+        opacity: 1;
+    }
     100% {
-      transform: translateY(-30vh);
+      transform: translateY(-33vh);
       opacity: 1;
     }
   }
+
+
+/*Style*/
+#tsuru{
+    max-width: 20%;
+}
+#myphoto{
+    max-width: 20%;
+}
+#linkedinicon{
+    max-width: 2%;
+}
+#githubicon{
+    max-width: 2%;
+}
+#pmc{
+    max-width: 50%;
+    border-radius: 30px 30px 30px 30px;
+}

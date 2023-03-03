@@ -15,14 +15,19 @@ function subir_pergaminho() {
     // document.getElementById("pergaminho").style.marginTop = "0";
     let close = document.querySelector("#pergaminho");
     let papel = document.querySelector(".container_main");
+    var paragrafo = document.getElementById("click_pergaminho");
     if (close.classList.contains('open')) {
         close.classList.remove('open');
         papel.classList.remove('container_papel');
-
+        paragrafo.style.display = "grid";
     } else {
         close.classList.add('open');
         papel.classList.add('container_papel');
+        paragrafo.style.display = "none";
     }
+    // paragrafo.style.color = "red";
+    // paragrafo.style.backgroundColor = "yellow";
+    // paragrafo.style.display = "none";
 }
 
 
