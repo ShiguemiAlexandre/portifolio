@@ -11,9 +11,8 @@
 </head>
 <body>
     <img src="/img/header.png" id="pergaminho" onclick="subir_pergaminho()">
-    <h3 id="click_pergaminho">Clique no pergaminho</h3>
+    <h3 class="click_pergaminho">Clique no pergaminho</h3>
     <main class="container_main">
-
         <div class="inicio">
             <div class="texto_inicial">
                 <h2 id="ola">Olá, me chamo</h2>
@@ -26,6 +25,7 @@
             <div class="botao_inicial">    
                 <img src="/img/linkedin.png" alt="linkedin" id="linkedinicon">
                     <a href="https://www.linkedin.com/in/alexandreshiguemi/">
+                        
                         <input type="button" value="Linkedin" id="botaolink">
                     </a>
                 <img src="/img/github.png" alt="github" id="githubicon">
@@ -49,18 +49,41 @@
                 </h4>
             </div>
         </div>
-        <h3>Técnologias</h3>
-        <img src="/img/html.png" alt="html">
-        <img src="/img/css.png" alt="css">
-        <img src="/img/js.png" alt="js">
-        <img src="/img/c.png" alt="c">
-        <img src="/img/python.png" alt="python">
-        <img src="/img/git.png" alt="git">
 
-        <h3>Projetos</h3>
-        <img src="/img/pmc.png" alt="pmc" id="pmc">
-        <img src="/img/under.jpg" alt="construction" id="construction">
+        <div class="tech_tittle">
+            <h3 id="tech_tittle_filho">Técnologias</h3>
+        </div>
+        <div class="image-viewer">
+            <img src="/img/html.png" alt="html">
+            <img src="/img/css.png" alt="css">
+            <img src="/img/js.png" alt="js">
+            <img src="/img/c.png" alt="c">
+            <img src="/img/python.png" alt="python">
+            <img src="/img/git.png" alt="git">
+        </div>    
+
+        <h3 id="project_tittle">Projetos</h3>
+        <div class="pmc_project">
+            <img src="/img/pmc.png" alt="pmc" id="pmc_img">
+            <div class="text">
+                <h3 id="pmc_tittle">Cigana Soraya</h3>
+                <h4 id="pmc_text">
+                    Esse projeto oferece um site, onde o cliente pode escolher a forma de pagamento que mais lhe agrada, dentre as diversas opções disponíveis.
+                    Seja cartão de crédito, débito ou pix, todas as opções são apresentadas de maneira clara e objetiva, sem complicações.
+                    Além disso, o processo de escolha é rápido e seguro, garantindo a tranquilidade e a confiança dos clientes durante todo o processo de compra.
+                    Com o nosso projeto, os clientes podem finalizar a compra com a forma de pagamento que melhor se adequa às suas necessidades, sem precisar passar por um processo demorado e complicado.
+                </h4>
+                <a href="https://cigadasoraya.netlify.app/">
+                    <input type="button" value="Visualizar" id="pmc_button">
+                </a>
+            </div>
+        </div>
+        <div class="container_under">
+            <img src="/img/under.jpg" alt="construction" id="construction">
+        </div>
+        <footer>
+            <h5>Design by Alexandre Shiguemi Ito</h5>
+        </footer>
 </main>
-
 </body>
 </html> 
