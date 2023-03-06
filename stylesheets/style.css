@@ -53,6 +53,7 @@
 .open{
     transition: all 3s;
     transform: translateY(-80%);
+    z-index: 2;
 }
 .container_papel{
     display: block;
@@ -60,6 +61,7 @@
 .container_main{
     transition: all 10s;
     animation: fade-in-top 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    z-index: 0;
 }
 main{
     background-color: beige;
@@ -102,9 +104,16 @@ main{
 #linkedinicon{
     max-width: 2vw;
 }
+#linkedinicon:hover{
+    filter: drop-shadow(0 0 10px rgb(255, 0, 0));
+}
 #githubicon{
     max-width: 2vw;
 }
+#githubicon:hover{
+    filter: drop-shadow(0 0 10px rgb(255, 0, 0));
+}
+
 #construction{
     max-width: 20%;
 }
@@ -124,7 +133,7 @@ a {
 }
 #nome{
     font-size: 3vw;
-    margin: 5vh 0 0 11vw
+    margin: 5vh 0 0 11vw;
 }
 #status{
     font-size: 2vw;
@@ -141,14 +150,46 @@ a {
     color: white;
     border-radius: 5px 5px 5px 5px;
     cursor: pointer;
+    margin: 1vw;
 }
+
+.github_pai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botaogit:hover{
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
 #botaolink{
     background-color: black;
     color: white;
     border-radius: 5px 5px 5px 5px;
     cursor: pointer;
-    margin-right: 1vw;
+    margin: 1vw;
 }
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#botaolink:hover{
+    box-shadow: 0 0 10px rgb(255, 0, 0); 
+}
+
+@keyframes arrive {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 /*Sobre*/
 
@@ -164,12 +205,32 @@ a {
     max-width: 22vw;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
-#myphoto:hover{
-    transition: all 0.5s;
-    box-shadow: 0 0 20px blue;
-}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 1px 0 rgba(0, 47, 255, 0.545);
+    }
+    5%{
+        box-shadow: 0 0 5px 0 rgba(0, 47, 255, 0.545);
+    }
+    10%{
+        box-shadow: 0 0 6px 0 rgba(0, 47, 255, 0.545);
+    }
+    70% {
+        box-shadow: 0 0 0 13px rgba(255, 255, 255, 0);
+    }
+    80% {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.545);
+    }
 
+    100% {
+         box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0);
+    }
+  }
 .photo{
     display: flex;
     align-items: center;
@@ -190,10 +251,12 @@ a {
 #tech_tittle_filho{
     font-size: 3vw;
 }
-.tech_tittle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#tech_tittle_filho{
+    text-align: center;
+}
+#scrolling{
+    text-align: center;
+    margin-top: 0;
 }
 
 .img_tech{
@@ -255,30 +318,24 @@ a {
     grid-template-rows: auto auto;
 }
 #pmc_img{
-    max-width: 50%;
+    max-width: 20vw;
     border-radius: 30px 30px 30px 30px;
     justify-self: end;
     margin-right: 2vw;
 }
+.img_shadow:hover{
+    filter: drop-shadow(0 0 10px rgb(255, 0, 0));
+}
 
 #pmc_button{
-    background-color: #26addc;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     border-radius: 5px 5px 5px 5px;
     cursor: pointer;
     border: none;
 }
-
-/*Under Construction*/
-
-#construction{
-    border-radius: 107px 100px 105px 110px;
-    align-items: center;
-    justify-content: center;
+#pmc_button:hover{
+    filter: drop-shadow(0 0 10px rgb(255, 0, 0));
 }
-.container_under{
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+/*Responsividade*/
