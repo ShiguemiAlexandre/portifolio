@@ -13,25 +13,3 @@ function subir_pergaminho() {
         paragrafo.classList.add('abrir');
     }
 }
-
-//Outra forma de fazer uma troca de posição
-
-// var selecionarpergaminho = document.getElementById("pergaminho");
-
-// selecionarpergaminho.onclick =  _ => {
-//   selecionarpergaminho.style.position = (selecionarpergaminho.style.position === "relative") ? "fixed" : "relative";
-//   selecionarpergaminho.style.top = (selecionarpergaminho.style.position === "fixed") ? "0" : "30vh";
-// };
-
-// var selecionarpergaminho = document.getElementById("pergaminho");
-
-// function open() {
-//     selecionarpergaminho.style.marginTop = "100";
-
-//     alert("algo");
-// }
-
-// selecionarpergaminho.onclick = function (e) {
-//     e.preventDefault();
-//     selecionarpergaminho.classList.toggle('toggle');
-// };let
