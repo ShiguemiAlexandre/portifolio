@@ -8,5 +8,5 @@
 # Desenvolvimento
 
 - Foi utilizado photoshop para criar meu próprio pergaminho(primeira tela)
-![alt text](/imagens/photoshop.png)
+![alt text](/img/photoshop.png)
 - Background e icones de software foram utilizado do site Flaticon
