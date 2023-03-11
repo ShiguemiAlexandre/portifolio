@@ -3,6 +3,7 @@
 - Web site criado para me apresentar e mostrar quais conhecimento eu possuo
 - Responsividade em construção
 - O link do site: https://alexandreito.netlify.app/
+![alt text](/img/portifolio-open.png)
 - Link do projeto desenvolvido: https://cigadasoraya.netlify.app/
 ![alt text](/img/soraya.png)
 
@@ -15,3 +16,4 @@
 # Curiosidade
 
 - A escritura que está no pergaminho é meu sobrenome "Ito"
+![alt text](/img/portifolio.png)
